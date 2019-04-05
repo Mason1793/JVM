@@ -1,3 +1,7 @@
+import java.util.List;
+
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * 快速排序
@@ -6,37 +10,80 @@
  **/
 public class CompareExample  {
     public static void main(String[] args){
-        MyData[] myDatas=new MyData[5];
-        MyData d1=new MyData();
-        MyData d2=new MyData();
-        MyData d3=new MyData();
-        MyData d4=new MyData();
-        MyData d5=new MyData();
-        d1.setMoney(5);
-        d1.setPos(1);
 
-        d2.setPos(2);
-        d2.setMoney(1);
+        Scanner in = new Scanner(System.in);
+        int n=0;
+        List<String> s=new ArrayList();
 
-        d3.setPos(3);
-        d3.setMoney(7);
+        n=in.nextInt();
+        while (in.hasNext()){
+            String temp=in.next();
+           System.out.println(temp);
+        }
 
-        d4.setPos(4);
-        d4.setMoney(9);
 
-        d5.setPos(5);
-        d5.setMoney(-30);
 
-        myDatas[0]=d1;
-        myDatas[1]=d2;
-        myDatas[2]=d3;
-        myDatas[3]=d4;
-        myDatas[4]=d5;
 
-        new CompareExample().quickSort(myDatas,0,4);
-
+        int i=0,j=0;
+//        int k=0;
+//        while (true){
+//            int count=0;
+//            if(b){
+//                for(;i<t1.length && count<n;i++,count++){
+//                    res[k++]=Integer.parseInt(t1[i]);
+//                }
+//                b=false;
+//            }else {
+//                for (;j<t2.length && count<n;j++,count++){
+//                    res[k++]=Integer.parseInt(t2[j]);
+//                }
+//                b=true;
+//            }
+//
+//            if(i == t1.length && j == t2.length){
+//                break;
+//            }
+//        }
+//
+//
+//        for(int p=0;p<res.length;p++){
+//            System.out.print(res[p]);
+//            if(p<res.length-1){
+//                System.out.print(",");
+//            }
+//
+//        }
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void quickSort(Comparable[] nums,int low,int high){
         if(low>=high)return;
