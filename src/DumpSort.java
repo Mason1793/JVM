@@ -1,18 +1,18 @@
+import java.util.Scanner;
+
 /**
  * @Author zz
  * @Date
  **/
 public class DumpSort {
     public static void main(String[] args){
-        int a[]={4,6,8,5,9};
-
-        new DumpSort().sort(a);
+      new JavaP().inc();
     }
 
     public void sort(int[] a){
         int N=a.length;
         for(int k=N/2-1;k>=0;k--)sink(a,k,N);
-
+        
         for(int j=a.length-1;j>0;j--){
             int temp=a[0];
             a[0]=a[j];
