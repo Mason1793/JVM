@@ -15,9 +15,10 @@ public class JavaP {
         }
     }
     public static void main(String[] args) throws Throwable{
-        Object object=System.currentTimeMillis()%2 == 0?System.out:new ClassA();
-
-        getPrintlnMH(object).invoke("icyfenix");
+        System.out.println("hot swap");
+//        Object object=System.currentTimeMillis()%2 == 0?System.out:new ClassA();
+//
+//        getPrintlnMH(object).invoke("icyfenix");
     }
     static class DynamicProxy implements InvocationHandler{
         @Override
