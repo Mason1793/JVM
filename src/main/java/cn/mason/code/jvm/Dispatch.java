@@ -1,4 +1,4 @@
-package jvm;
+package cn.mason.code.jvm;
 
 /**
  * @author Mason

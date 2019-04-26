@@ -1,4 +1,4 @@
-package jvm;
+package cn.mason.code.jvm;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.ProcessingEnvironment;
